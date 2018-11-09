@@ -1,0 +1,208 @@
+/*general page styling*/
+
+*{
+	font-family: "Lato", helvetica, sans-serif;
+	background-color: black;
+	color: white;
+	letter-spacing: 1.1px;
+	max-width: 2400px;
+}
+.container{
+  margin: 0 25px;
+  text-align: center;
+}
+
+h1{
+	font-family: 'Josefin Sans';
+	font-weight: 400;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p{
+	font-weight: 300;
+	text-align: center
+}
+
+/*end general styling*/
+
+header{
+	display: flex;
+	flex-direction: column;
+}
+
+img{
+	align-self: center;
+	width: 200px;
+}
+
+
+/*form styling*/
+input{
+    box-sizing: border-box;
+	border-radius: .3em;
+	background-color: #fffafc;
+	height: 45px;
+	width: 75%;
+	margin-bottom: 10px;
+   align-items:center;
+	font-weight: 300;
+	font-size: 14px;
+	color: #e70272;
+	font-weight: 400;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="text"]:active,
+input[type="email"]:active{
+	font-weight: 400;
+	background-color: #f6f6f6;
+	color: #e70272;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+	outline: 3px solid #ff50a4;
+	outline-style: inset;
+}
+
+input[placeholder]{
+  padding-left: 10px;
+}
+
+
+
+input[type="submit"]{
+	background-color: #e70272;
+	color: white;
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover{
+	background-color: #ffc7e2;
+	color: #d6026a;
+}
+
+
+input[type="submit"], 
+input[type=submit]:focus,
+input[type=submit]:active{
+	outline: none;
+	border: none;
+}
+
+/*end form styling*/
+
+
+/*footer styling*/
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-top: 2em;
+}
+
+footer img{
+	width: 50px;
+	margin: 10px;
+}
+
+.follow{
+	font-family: "Courgette", serif;
+	font-size: 18px;
+	color: #ffd8e8;	
+	flex-basis: 100%;
+	margin-bottom: -5px;
+    text-shadow: 0 0 0.2em #e70272, 0 0 0.2em #e70272,
+        0 0 0.2em #e70272;
+}
+
+/*Media Query --------------------------------------------------------------------------------tablet and desktop styling-----------------------------------------------------------------------------------------------Media Query*/
+
+
+@media (min-width: 720px){
+
+  .container{
+
+    max-width: 1200px;
+    margin 0 auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+	
+	
+img{
+	align-self: center;
+	width: 250px;
+}
+
+	section{
+		margin-bottom: 50px;
+	}
+
+  
+  
+/*  media query form styling*/
+	form{ 
+	  display: flex;
+      max-width: 800px;
+      margin: auto;
+	}
+
+    #name,
+    #email{
+      flex-basis:2200px;
+      margin-right: 5px;
+    }
+
+    #submit{
+      height: 45px;
+    }
+	
+
+	input[placeholder]{
+	text-align: left;
+}
+  
+/*  media query footer styling*/
+	footer{
+		max-width: 1200px;
+      margin: auto;
+	}
+
+	.follow{
+		width: 160px;
+		transform: rotate(-15deg);
+		text-align: left;
+		margin: 20px 0  -12px -50px;
+		background: none;
+	}
+	
+	footer p{
+		flex-basis: 100%;
+    }
+
+} /*media query end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
